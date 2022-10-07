@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller - TypeScript | ManuOS</title>
 </head>
-<body style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Microsoft Student Summit</h1>
+<body style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(50,59,181,1) 100%); display: flex; flex-direction: column; align-items: center; text-align: center;">
     <!--Get UserName-->
+    <h1 class="mb-1" style="color: aliceblue; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Microsoft Student Summit</h1>
     <div>
         <form action="" method="get">
-            <input type="text" name="get-name" id="get-name" placeholder="Escribe aquí tu Nombre">
-            <button type="button" onclick="getData()">Click</button>
+            <input class="form-control" type="text" id="get-name" style="width: 232px;" name="get-name" placeholder="Escribe tu nombre">
+            <button class="btn btn-primary" type="button" style="height: 35px;margin-left: 11px;" onclick="getData()">Click</button>
         </form>
     </div>
     <!--Put UserName-->
     <div id="replace">
-        <p>¿Cuál es tu nombre?</p>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue;" >¿Cuál es tu nombre?</p>
     </div>
     <!--Game field-->
     <div id="div-counter">
@@ -26,6 +26,7 @@
     <div style="max-width: 600px; max-height: 600px; ">
         <canvas id = "game" width="400px" height="400px"></canvas>
     </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
